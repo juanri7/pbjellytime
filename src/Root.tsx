@@ -4,6 +4,9 @@ import { ChatInterface } from "./ChatInterface";
 import { JoinButtonClick } from "./JoinButtonClick";
 import { SearchScreen } from "./SearchScreen";
 import { SearchScreenClick } from "./SearchScreenClick";
+import { MagicPath } from "./MagicPath";
+import { ProductReveal } from "./ProductReveal";
+import { SubmitAction } from "./SubmitAction";
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -17,15 +20,7 @@ export const RemotionRoot: React.FC = () => {
         height={1080}
         defaultProps={{}}
       />
-      <Composition
-        id="ChatInterface"
-        component={ChatInterface}
-        durationInFrames={300}
-        fps={60}
-        width={1920}
-        height={1080}
-        defaultProps={{}}
-      />
+
       <Composition
         id="JoinButtonClick"
         component={JoinButtonClick}
@@ -48,6 +43,35 @@ export const RemotionRoot: React.FC = () => {
         id="SearchScreenClick"
         component={SearchScreenClick}
         durationInFrames={200}
+        fps={60}
+        width={1920}
+        height={1080}
+        defaultProps={{}}
+      />
+      <Composition
+        id="InputBox"
+        component={MagicPath}
+        durationInFrames={300}
+        fps={60}
+        width={1920}
+        height={1080}
+        defaultProps={{
+          zoomAndPan: true,
+        }}
+      />
+      <Composition
+        id="ProductReveal"
+        component={ProductReveal}
+        durationInFrames={300}
+        fps={60}
+        width={1920}
+        height={1080}
+        defaultProps={{}}
+      />
+      <Composition
+        id="SubmitAction"
+        component={SubmitAction}
+        durationInFrames={120}
         fps={60}
         width={1920}
         height={1080}

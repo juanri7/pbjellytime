@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "target": "ES2018",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "jsx": "react-jsx",
+    "strict": true,
+    "noEmit": true,
+    "lib": ["ES2020", "DOM"],
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "resolveJsonModule": true
+  },
+  "include": ["src"],
+  "exclude": ["remotion.config.ts", "node_modules"]
+}

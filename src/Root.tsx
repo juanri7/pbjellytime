@@ -8,10 +8,20 @@ import { MagicPath } from "./MagicPath";
 import { ProductReveal } from "./ProductReveal";
 import { SubmitAction } from "./SubmitAction";
 import { DesignSystemSelect } from "./DesignSystemSelect";
+import { DraftFinalRenderV1 } from "./DraftFinalRenderV1";
 
 export const RemotionRoot: React.FC = () => {
   return (
     <>
+      <Composition
+        id="DraftFinalRenderV1"
+        component={DraftFinalRenderV1}
+        durationInFrames={1320}
+        fps={60}
+        width={1920}
+        height={1080}
+        defaultProps={{}}
+      />
       <Composition
         id="DesignSystemSelect"
         component={DesignSystemSelect}

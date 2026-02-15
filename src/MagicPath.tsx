@@ -202,6 +202,25 @@ export const MagicPath: React.FC<MagicPathProps> = (props) => {
 							alignItems: "center",
 						}}
 					>
+						{/* Nike Design System Badge */}
+						<div
+							style={{
+								display: "flex",
+								alignItems: "center",
+								gap: 6,
+								padding: "6px 14px",
+								backgroundColor: "#111111",
+								borderRadius: 20,
+								fontSize: 15,
+								fontWeight: 700,
+								color: "#CDFC41",
+								marginRight: 10,
+								flexShrink: 0,
+							}}
+						>
+							<span style={{ fontSize: 14 }}>✓</span>
+							Nike
+						</div>
 						{text}
 
 						<span

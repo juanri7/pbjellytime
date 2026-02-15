@@ -7,14 +7,15 @@ import { SearchScreenClick } from "./SearchScreenClick";
 import { MagicPath } from "./MagicPath";
 import { ProductReveal } from "./ProductReveal";
 import { SubmitAction } from "./SubmitAction";
+import { DesignSystemSelect } from "./DesignSystemSelect";
 
 export const RemotionRoot: React.FC = () => {
   return (
     <>
       <Composition
-        id="HelloWorld"
-        component={HelloWorld}
-        durationInFrames={150}
+        id="DesignSystemSelect"
+        component={DesignSystemSelect}
+        durationInFrames={600}
         fps={60}
         width={1920}
         height={1080}
@@ -34,15 +35,6 @@ export const RemotionRoot: React.FC = () => {
         id="SearchScreen"
         component={SearchScreen}
         durationInFrames={300}
-        fps={60}
-        width={1920}
-        height={1080}
-        defaultProps={{}}
-      />
-      <Composition
-        id="SearchScreenClick"
-        component={SearchScreenClick}
-        durationInFrames={200}
         fps={60}
         width={1920}
         height={1080}
